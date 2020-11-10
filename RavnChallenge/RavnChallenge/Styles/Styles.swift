@@ -13,3 +13,10 @@ extension Color {
     static let textLight = Color("textLight")
     static let textEmphasis = Color("textEmphasis")
 }
+
+extension UIColor {
+    static let ravnBlack = UIColor(named: "ravnBlack")
+    static let textDark = UIColor(named: "textDark")
+    static let textLight = UIColor(named: "textLight")
+    static let textEmphasis = UIColor(named: "textEmphasis")
+}

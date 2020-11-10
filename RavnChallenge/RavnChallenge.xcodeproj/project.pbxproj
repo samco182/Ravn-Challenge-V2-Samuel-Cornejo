@@ -18,6 +18,7 @@
 		4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B222255A5F67008C2AC2 /* Styles.swift */; };
 		4AA0B246255A6C35008C2AC2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA0B245255A6C35008C2AC2 /* Apollo */; };
 		4AA0B264255A80BB008C2AC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B263255A80BB008C2AC2 /* API.swift */; };
+		4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4AA0B251255A732B008C2AC2 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		4AA0B25F255A7FC4008C2AC2 /* PeopleList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = PeopleList.graphql; sourceTree = "<group>"; };
 		4AA0B263255A80BB008C2AC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				4AA0B222255A5F67008C2AC2 /* Styles.swift */,
 				4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */,
+				4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA0B1E9255A54FF008C2AC2 /* ContentView.swift in Sources */,
+				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
 				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
