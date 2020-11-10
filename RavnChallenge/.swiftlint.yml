@@ -1,0 +1,6 @@
+identifier_name:
+  excluded:
+    - id
+    - ok
+excluded:
+  - RavnChallenge/Resources
