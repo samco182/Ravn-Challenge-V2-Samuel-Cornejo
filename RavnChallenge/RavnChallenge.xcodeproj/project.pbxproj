@@ -14,6 +14,7 @@
 		4AA0B1F9255A5501008C2AC2 /* RavnChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B1F8255A5501008C2AC2 /* RavnChallengeTests.swift */; };
 		4AA0B204255A5501008C2AC2 /* RavnChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */; };
 		4AA0B217255A587B008C2AC2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B216255A587B008C2AC2 /* Colors.xcassets */; };
+		4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */; };
 		4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B222255A5F67008C2AC2 /* Styles.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavnChallengeUITests.swift; sourceTree = "<group>"; };
 		4AA0B205255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA0B216255A587B008C2AC2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSyle.swift; sourceTree = "<group>"; };
 		4AA0B222255A5F67008C2AC2 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA0B222255A5F67008C2AC2 /* Styles.swift */,
+				4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA0B1E9255A54FF008C2AC2 /* ContentView.swift in Sources */,
+				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
 			);
