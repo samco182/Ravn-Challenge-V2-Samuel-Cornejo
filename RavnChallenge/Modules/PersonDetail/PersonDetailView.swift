@@ -28,7 +28,7 @@ struct PersonDetailView: View {
                     SectionHeader(title: "Vehicles")
 
                     VStack(spacing: 0) {
-                        ForEach(person.vehicles, id: \.id) { vehicle in
+                        ForEach(person.vehicles) { vehicle in
                             DataCell(title: vehicle.name ?? "")
                         }
                     }
