@@ -20,6 +20,7 @@
 		4AA0B264255A80BB008C2AC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B263255A80BB008C2AC2 /* API.swift */; };
 		4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */; };
 		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
+		4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACD47EA255B80D0008984FA /* CombineExt */; };
 		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
 		4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */,
 				4AA0B246255A6C35008C2AC2 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +254,7 @@
 			name = RavnChallenge;
 			packageProductDependencies = (
 				4AA0B245255A6C35008C2AC2 /* Apollo */,
+				4ACD47EA255B80D0008984FA /* CombineExt */,
 			);
 			productName = RavnChallenge;
 			productReference = 4AA0B1E3255A54FF008C2AC2 /* RavnChallenge.app */;
@@ -326,6 +329,7 @@
 			mainGroup = 4AA0B1DA255A54FF008C2AC2;
 			packageReferences = (
 				4AA0B244255A6C35008C2AC2 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */,
 			);
 			productRefGroup = 4AA0B1E4255A54FF008C2AC2 /* Products */;
 			projectDirPath = "";
@@ -382,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Resources/GraphQL/schema.json\" Resources/GraphQL/API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://apollo-fullstack-tutorial.herokuapp.com/\"\n";
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Resources/GraphQL/schema.json\" Resources/GraphQL/API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://swapi-graphql.netlify.app/.netlify/functions/index\"\n";
 		};
 		4AA0B276255A8B2A008C2AC2 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -747,6 +751,14 @@
 				minimumVersion = 0.36.0;
 			};
 		};
+		4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -754,6 +766,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4AA0B244255A6C35008C2AC2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		4ACD47EA255B80D0008984FA /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
