@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B1E6255A54FF008C2AC2 /* RavnChallengeApp.swift */; };
+		4AA0B1EB255A5500008C2AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B1EA255A5500008C2AC2 /* Assets.xcassets */; };
+		4AA0B1EE255A5500008C2AC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B1ED255A5500008C2AC2 /* Preview Assets.xcassets */; };
+		4AA0B204255A5501008C2AC2 /* RavnChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */; };
+		4AA0B217255A587B008C2AC2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B216255A587B008C2AC2 /* Colors.xcassets */; };
+		4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */; };
+		4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B222255A5F67008C2AC2 /* Styles.swift */; };
+		4AA0B246255A6C35008C2AC2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA0B245255A6C35008C2AC2 /* Apollo */; };
+		4AA0B264255A80BB008C2AC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B263255A80BB008C2AC2 /* API.swift */; };
+		4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */; };
+		4AA0B286255A952A008C2AC2 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B285255A952A008C2AC2 /* PeopleListView.swift */; };
+		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
+		4ACCD12A255C56EC007C4EFB /* Vehicle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD129255C56EC007C4EFB /* Vehicle+Extensions.swift */; };
+		4ACCD135255C5EBB007C4EFB /* StarWarsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */; };
+		4ACCD13E255C5F2A007C4EFB /* ApolloServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */; };
+		4ACCD148255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */; };
+		4ACCD14D255C6C33007C4EFB /* StarWarsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */; };
+		4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACD47EA255B80D0008984FA /* CombineExt */; };
+		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
+		4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */; };
+		4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */; };
+		4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4827255B9E66008984FA /* LoadingCell.swift */; };
+		4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4840255BAD58008984FA /* PersonCell.swift */; };
+		4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4846255BB20D008984FA /* Person+Extensions.swift */; };
+		4ACD484C255BB6AD008984FA /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD484B255BB6AD008984FA /* NoticeCell.swift */; };
+		4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */; };
+		4ACD485C255BDBEA008984FA /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD485B255BDBEA008984FA /* PersonDetailView.swift */; };
+		4ACD4861255BDFDB008984FA /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4860255BDFDB008984FA /* SectionHeader.swift */; };
+		4ACD4871255BE36A008984FA /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4870255BE36A008984FA /* DataCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AA0B1F5255A5501008C2AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA0B1DB255A54FF008C2AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA0B1E2255A54FF008C2AC2;
+			remoteInfo = RavnChallenge;
+		};
+		4AA0B200255A5501008C2AC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AA0B1DB255A54FF008C2AC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AA0B1E2255A54FF008C2AC2;
+			remoteInfo = RavnChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AA0B1E3255A54FF008C2AC2 /* RavnChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RavnChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA0B1E6255A54FF008C2AC2 /* RavnChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavnChallengeApp.swift; sourceTree = "<group>"; };
+		4AA0B1EA255A5500008C2AC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AA0B1ED255A5500008C2AC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AA0B1EF255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA0B1F4255A5501008C2AC2 /* RavnChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavnChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA0B1FA255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA0B1FF255A5501008C2AC2 /* RavnChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavnChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavnChallengeUITests.swift; sourceTree = "<group>"; };
+		4AA0B205255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA0B216255A587B008C2AC2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSyle.swift; sourceTree = "<group>"; };
+		4AA0B222255A5F67008C2AC2 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		4AA0B251255A732B008C2AC2 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		4AA0B25F255A7FC4008C2AC2 /* StarWarsPeople.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = StarWarsPeople.graphql; sourceTree = "<group>"; };
+		4AA0B263255A80BB008C2AC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
+		4AA0B285255A952A008C2AC2 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
+		4ACCD129255C56EC007C4EFB /* Vehicle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Extensions.swift"; sourceTree = "<group>"; };
+		4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceTests.swift; sourceTree = "<group>"; };
+		4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServiceMock.swift; sourceTree = "<group>"; };
+		4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleProviderTests.swift; sourceTree = "<group>"; };
+		4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceMock.swift; sourceTree = "<group>"; };
+		4ACD47F1255B822F008984FA /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
+		4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleProvider.swift; sourceTree = "<group>"; };
+		4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleResponse.swift; sourceTree = "<group>"; };
+		4ACD4827255B9E66008984FA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		4ACD4840255BAD58008984FA /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		4ACD4846255BB20D008984FA /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
+		4ACD484B255BB6AD008984FA /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		4ACD485B255BDBEA008984FA /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		4ACD4860255BDFDB008984FA /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		4ACD4870255BE36A008984FA /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AA0B1E0255A54FF008C2AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */,
+				4AA0B246255A6C35008C2AC2 /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1F1255A5501008C2AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1FC255A5501008C2AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AA0B1DA255A54FF008C2AC2 = {
+			isa = PBXGroup;
+			children = (
+				4AA0B1E5255A54FF008C2AC2 /* RavnChallenge */,
+				4AA0B1F7255A5501008C2AC2 /* RavnChallengeTests */,
+				4AA0B202255A5501008C2AC2 /* RavnChallengeUITests */,
+				4AA0B1E4255A54FF008C2AC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AA0B1E4255A54FF008C2AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B1E3255A54FF008C2AC2 /* RavnChallenge.app */,
+				4AA0B1F4255A5501008C2AC2 /* RavnChallengeTests.xctest */,
+				4AA0B1FF255A5501008C2AC2 /* RavnChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AA0B1E5255A54FF008C2AC2 /* RavnChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B215255A5858008C2AC2 /* Assets */,
+				4ACD4845255BB1EC008984FA /* Extensions */,
+				4AA0B283255A94D3008C2AC2 /* Modules */,
+				4AA0B28D255B5A13008C2AC2 /* Network */,
+				4AA0B25D255A7F75008C2AC2 /* Resources */,
+				4AA0B21B255A5C6B008C2AC2 /* Styles */,
+				4ACD4826255B9E58008984FA /* Views */,
+				4AA0B1E6255A54FF008C2AC2 /* RavnChallengeApp.swift */,
+				4AA0B1EC255A5500008C2AC2 /* Preview Content */,
+			);
+			path = RavnChallenge;
+			sourceTree = "<group>";
+		};
+		4AA0B1EC255A5500008C2AC2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B1ED255A5500008C2AC2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4AA0B1F7255A5501008C2AC2 /* RavnChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCD13C255C5F18007C4EFB /* Mocks */,
+				4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */,
+				4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */,
+				4AA0B1FA255A5501008C2AC2 /* Info.plist */,
+			);
+			path = RavnChallengeTests;
+			sourceTree = "<group>";
+		};
+		4AA0B202255A5501008C2AC2 /* RavnChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */,
+				4AA0B205255A5501008C2AC2 /* Info.plist */,
+			);
+			path = RavnChallengeUITests;
+			sourceTree = "<group>";
+		};
+		4AA0B215255A5858008C2AC2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B1EA255A5500008C2AC2 /* Assets.xcassets */,
+				4AA0B216255A587B008C2AC2 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4AA0B21B255A5C6B008C2AC2 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B222255A5F67008C2AC2 /* Styles.swift */,
+				4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */,
+				4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		4AA0B25D255A7F75008C2AC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B25E255A7F8C008C2AC2 /* GraphQL */,
+				4AA0B1EF255A5501008C2AC2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AA0B25E255A7F8C008C2AC2 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B25F255A7FC4008C2AC2 /* StarWarsPeople.graphql */,
+				4AA0B251255A732B008C2AC2 /* schema.json */,
+				4AA0B263255A80BB008C2AC2 /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		4AA0B283255A94D3008C2AC2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B284255A94DD008C2AC2 /* PeopleList */,
+				4ACD485A255BDBC5008984FA /* PersonDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4AA0B284255A94DD008C2AC2 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4812255B991D008984FA /* Models */,
+				4ACD47F0255B821F008984FA /* Service */,
+				4AA0B285255A952A008C2AC2 /* PeopleListView.swift */,
+				4ACD4840255BAD58008984FA /* PersonCell.swift */,
+			);
+			path = PeopleList;
+			sourceTree = "<group>";
+		};
+		4AA0B28D255B5A13008C2AC2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4ACCD13C255C5F18007C4EFB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */,
+				4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4ACD47F0255B821F008984FA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD47F1255B822F008984FA /* StarWarsService.swift */,
+				4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4ACD4812255B991D008984FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4ACD4826255B9E58008984FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4827255B9E66008984FA /* LoadingCell.swift */,
+				4ACD484B255BB6AD008984FA /* NoticeCell.swift */,
+				4ACD4860255BDFDB008984FA /* SectionHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4ACD4845255BB1EC008984FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4846255BB20D008984FA /* Person+Extensions.swift */,
+				4ACCD129255C56EC007C4EFB /* Vehicle+Extensions.swift */,
+				4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4ACD485A255BDBC5008984FA /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD485B255BDBEA008984FA /* PersonDetailView.swift */,
+				4ACD4870255BE36A008984FA /* DataCell.swift */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AA0B1E2255A54FF008C2AC2 /* RavnChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA0B208255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallenge" */;
+			buildPhases = (
+				4AA0B24A255A7131008C2AC2 /* Apollo CLI */,
+				4AA0B276255A8B2A008C2AC2 /* SwiftLint */,
+				4AA0B1DF255A54FF008C2AC2 /* Sources */,
+				4AA0B1E0255A54FF008C2AC2 /* Frameworks */,
+				4AA0B1E1255A54FF008C2AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavnChallenge;
+			packageProductDependencies = (
+				4AA0B245255A6C35008C2AC2 /* Apollo */,
+				4ACD47EA255B80D0008984FA /* CombineExt */,
+			);
+			productName = RavnChallenge;
+			productReference = 4AA0B1E3255A54FF008C2AC2 /* RavnChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AA0B1F3255A5501008C2AC2 /* RavnChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA0B20B255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallengeTests" */;
+			buildPhases = (
+				4AA0B1F0255A5501008C2AC2 /* Sources */,
+				4AA0B1F1255A5501008C2AC2 /* Frameworks */,
+				4AA0B1F2255A5501008C2AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA0B1F6255A5501008C2AC2 /* PBXTargetDependency */,
+			);
+			name = RavnChallengeTests;
+			productName = RavnChallengeTests;
+			productReference = 4AA0B1F4255A5501008C2AC2 /* RavnChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AA0B1FE255A5501008C2AC2 /* RavnChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA0B20E255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallengeUITests" */;
+			buildPhases = (
+				4AA0B1FB255A5501008C2AC2 /* Sources */,
+				4AA0B1FC255A5501008C2AC2 /* Frameworks */,
+				4AA0B1FD255A5501008C2AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA0B201255A5501008C2AC2 /* PBXTargetDependency */,
+			);
+			name = RavnChallengeUITests;
+			productName = RavnChallengeUITests;
+			productReference = 4AA0B1FF255A5501008C2AC2 /* RavnChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AA0B1DB255A54FF008C2AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					4AA0B1E2255A54FF008C2AC2 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					4AA0B1F3255A5501008C2AC2 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4AA0B1E2255A54FF008C2AC2;
+					};
+					4AA0B1FE255A5501008C2AC2 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 4AA0B1E2255A54FF008C2AC2;
+					};
+				};
+			};
+			buildConfigurationList = 4AA0B1DE255A54FF008C2AC2 /* Build configuration list for PBXProject "RavnChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AA0B1DA255A54FF008C2AC2;
+			packageReferences = (
+				4AA0B244255A6C35008C2AC2 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */,
+			);
+			productRefGroup = 4AA0B1E4255A54FF008C2AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AA0B1E2255A54FF008C2AC2 /* RavnChallenge */,
+				4AA0B1F3255A5501008C2AC2 /* RavnChallengeTests */,
+				4AA0B1FE255A5501008C2AC2 /* RavnChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AA0B1E1255A54FF008C2AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA0B217255A587B008C2AC2 /* Colors.xcassets in Resources */,
+				4AA0B1EE255A5500008C2AC2 /* Preview Assets.xcassets in Resources */,
+				4AA0B1EB255A5500008C2AC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1F2255A5501008C2AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1FD255A5501008C2AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AA0B24A255A7131008C2AC2 /* Apollo CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"Resources/GraphQL/schema.json\" Resources/GraphQL/API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://swapi-graphql.netlify.app/.netlify/functions/index\"\n";
+		};
+		4AA0B276255A8B2A008C2AC2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AA0B1DF255A54FF008C2AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */,
+				4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */,
+				4AA0B286255A952A008C2AC2 /* PeopleListView.swift in Sources */,
+				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
+				4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */,
+				4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */,
+				4ACD485C255BDBEA008984FA /* PersonDetailView.swift in Sources */,
+				4ACD4871255BE36A008984FA /* DataCell.swift in Sources */,
+				4ACCD12A255C56EC007C4EFB /* Vehicle+Extensions.swift in Sources */,
+				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
+				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
+				4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */,
+				4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */,
+				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
+				4ACD4861255BDFDB008984FA /* SectionHeader.swift in Sources */,
+				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
+				4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */,
+				4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */,
+				4ACD484C255BB6AD008984FA /* NoticeCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1F0255A5501008C2AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACCD135255C5EBB007C4EFB /* StarWarsServiceTests.swift in Sources */,
+				4ACCD13E255C5F2A007C4EFB /* ApolloServiceMock.swift in Sources */,
+				4ACCD14D255C6C33007C4EFB /* StarWarsServiceMock.swift in Sources */,
+				4ACCD148255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA0B1FB255A5501008C2AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA0B204255A5501008C2AC2 /* RavnChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AA0B1F6255A5501008C2AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA0B1E2255A54FF008C2AC2 /* RavnChallenge */;
+			targetProxy = 4AA0B1F5255A5501008C2AC2 /* PBXContainerItemProxy */;
+		};
+		4AA0B201255A5501008C2AC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AA0B1E2255A54FF008C2AC2 /* RavnChallenge */;
+			targetProxy = 4AA0B200255A5501008C2AC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AA0B206255A5501008C2AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AA0B207255A5501008C2AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AA0B209255A5501008C2AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "\"RavnChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RavnChallenge/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AA0B20A255A5501008C2AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_ASSET_PATHS = "\"RavnChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RavnChallenge/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AA0B20C255A5501008C2AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				INFOPLIST_FILE = RavnChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavnChallenge.app/RavnChallenge";
+			};
+			name = Debug;
+		};
+		4AA0B20D255A5501008C2AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				INFOPLIST_FILE = RavnChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RavnChallenge.app/RavnChallenge";
+			};
+			name = Release;
+		};
+		4AA0B20F255A5501008C2AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				INFOPLIST_FILE = RavnChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavnChallenge;
+			};
+			name = Debug;
+		};
+		4AA0B210255A5501008C2AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PX8695HSPT;
+				INFOPLIST_FILE = RavnChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samco182.RavnChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RavnChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AA0B1DE255A54FF008C2AC2 /* Build configuration list for PBXProject "RavnChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA0B206255A5501008C2AC2 /* Debug */,
+				4AA0B207255A5501008C2AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA0B208255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA0B209255A5501008C2AC2 /* Debug */,
+				4AA0B20A255A5501008C2AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA0B20B255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA0B20C255A5501008C2AC2 /* Debug */,
+				4AA0B20D255A5501008C2AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AA0B20E255A5501008C2AC2 /* Build configuration list for PBXNativeTarget "RavnChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA0B20F255A5501008C2AC2 /* Debug */,
+				4AA0B210255A5501008C2AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AA0B244255A6C35008C2AC2 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.36.0;
+			};
+		};
+		4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AA0B245255A6C35008C2AC2 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AA0B244255A6C35008C2AC2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		4ACD47EA255B80D0008984FA /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ACD47E9255B80D0008984FA /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4AA0B1DB255A54FF008C2AC2 /* Project object */;
+}
