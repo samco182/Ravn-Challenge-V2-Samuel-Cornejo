@@ -8,6 +8,7 @@
 import Foundation
 
 typealias Person = StarWarsPeopleQuery.Data.AllPerson.Person
+typealias Vehicle = StarWarsPeopleQuery.Data.AllPerson.Person.VehicleConnection.Vehicle
 typealias PageInformation = StarWarsPeopleQuery.Data.AllPerson.PageInfo
 
 extension Person {
@@ -19,6 +20,10 @@ extension Person {
         } else {
             return "Human from \(home)"
         }
+    }
+
+    var vehicles: [Vehicle] {
+        vehicleConnection?.vehicles?.compactMap { $0 } ?? []
     }
 }
 
