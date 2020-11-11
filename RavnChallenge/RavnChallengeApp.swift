@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RavnChallengeApp: App {
+    // MARK: Variables Declaration
+    @StateObject var provider = StarWarsPeopleProvider()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PeopleListView(provider: provider)
         }
     }
 }
