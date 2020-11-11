@@ -14,7 +14,7 @@ protocol StarWarsServiceType {
     /// - Parameters:
     ///   - resultsPerPage: The number of results per page
     ///   - endCursor: A reference to the last item of the page
-    func fetchAllPeople(resultsPerPage: Int, endCursor: String) -> AnyPublisher<StarWarsPeopleResponse, Error>
+    func fetchAllPeople(resultsPerPage: Int, endCursor: String?) -> AnyPublisher<StarWarsPeopleResponse, Error>
 }
 
 struct StarWarsService: StarWarsServiceType {
@@ -27,7 +27,7 @@ struct StarWarsService: StarWarsServiceType {
     }
 
     // MARK: Public Methods
-    func fetchAllPeople(resultsPerPage: Int, endCursor: String) -> AnyPublisher<StarWarsPeopleResponse, Error> {
+    func fetchAllPeople(resultsPerPage: Int, endCursor: String?) -> AnyPublisher<StarWarsPeopleResponse, Error> {
         service.fetch(query: StarWarsPeopleQuery(first: resultsPerPage, after: endCursor))
             .map { StarWarsPeopleResponse(data: $0) }
             .eraseToAnyPublisher()

@@ -21,3 +21,10 @@ extension Person {
         }
     }
 }
+
+extension Person: Identifiable, Equatable {
+    public static func == (lhs: StarWarsPeopleQuery.Data.AllPerson.Person,
+                           rhs: StarWarsPeopleQuery.Data.AllPerson.Person) -> Bool {
+        lhs.id == rhs.id
+    }
+}

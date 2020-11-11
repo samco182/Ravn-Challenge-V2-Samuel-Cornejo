@@ -12,10 +12,16 @@ import Foundation
 final class StarWarsPeopleProvider: ObservableObject {
     // MARK: Variables Declaration
     private let service: StarWarsServiceType
-    private let peopleRequest = PassthroughRelay<Void>()
+    var cancellable: AnyCancellable?
     private var cancellables = Set<AnyCancellable>()
 
+    // Input
+    private let fetchPeopleRequest = PassthroughRelay<Void>()
+    private let fetchMorePeopleRequest = PassthroughRelay<Void>()
+
     // Output
+    private var currentPage: PageInformation = .init(hasNextPage: true)
+
     @Published var people: [Person] = []
     @Published var requestDidFail: Bool = false
     @Published var isLoading: Bool = false
@@ -29,22 +35,39 @@ final class StarWarsPeopleProvider: ObservableObject {
 
     // MARK: Public Methods
     func fetchPeople() {
-        peopleRequest.accept(())
+        fetchPeopleRequest.accept(())
+    }
+
+    func fetchMorePeople(after person: Person) {
+        guard person == people.last, currentPage.hasNextPage, !isLoading else { return }
+        fetchMorePeopleRequest.accept(())
     }
 
     // MARK: Private Methods
     private func setupBindings() {
+        // Input
+        let fetchRequest = Publishers.Merge(fetchPeopleRequest, fetchMorePeopleRequest)
+            .compactMap { [weak self] _ in self?.currentPage }
+
         // Output
-        let peopleResult = peopleRequest
-            .flatMapLatest(on: self) { weakSelf, _ in
-                weakSelf.service.fetchAllPeople(resultsPerPage: 5, endCursor: "").materialize()
+        let peopleResult = fetchRequest
+            .flatMapLatest(on: self) { weakSelf, currentPage in
+                weakSelf.service.fetchAllPeople(resultsPerPage: 5, endCursor: currentPage.endCursor).materialize()
             }
             .share()
 
         peopleResult
             .values()
+            .map(\.page)
+            .assign(to: \.currentPage, on: self, ownership: .weak)
+            .store(in: &cancellables)
+
+        peopleResult
+            .values()
             .map(\.people)
-            .assign(to: \.people, on: self, ownership: .weak)
+            .sink(receiveValue: { [weak self] people in
+                self?.people.append(contentsOf: people)
+            })
             .store(in: &cancellables)
 
         peopleResult
@@ -53,7 +76,8 @@ final class StarWarsPeopleProvider: ObservableObject {
             .assign(to: \.requestDidFail, on: self, ownership: .weak)
             .store(in: &cancellables)
 
-        Publishers.Merge(peopleRequest.map { true }, peopleResult.map { _ in false })
+        Publishers.Merge(fetchRequest.map { _ in true },
+                         peopleResult.map { _ in false })
             .assign(to: \.isLoading, on: self, ownership: .weak)
             .store(in: &cancellables)
     }
