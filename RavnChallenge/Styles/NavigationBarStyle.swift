@@ -19,7 +19,7 @@ struct NavigationBarStyle: ViewModifier {
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
-        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().tintColor = titleColor
     }
 
     // MARK: Public Methods
