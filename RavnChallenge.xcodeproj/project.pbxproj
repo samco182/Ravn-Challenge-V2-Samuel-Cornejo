@@ -10,7 +10,6 @@
 		4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B1E6255A54FF008C2AC2 /* RavnChallengeApp.swift */; };
 		4AA0B1EB255A5500008C2AC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B1EA255A5500008C2AC2 /* Assets.xcassets */; };
 		4AA0B1EE255A5500008C2AC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B1ED255A5500008C2AC2 /* Preview Assets.xcassets */; };
-		4AA0B1F9255A5501008C2AC2 /* RavnChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B1F8255A5501008C2AC2 /* RavnChallengeTests.swift */; };
 		4AA0B204255A5501008C2AC2 /* RavnChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */; };
 		4AA0B217255A587B008C2AC2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA0B216255A587B008C2AC2 /* Colors.xcassets */; };
 		4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */; };
@@ -21,6 +20,10 @@
 		4AA0B286255A952A008C2AC2 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B285255A952A008C2AC2 /* PeopleListView.swift */; };
 		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
 		4ACCD12A255C56EC007C4EFB /* Vehicle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD129255C56EC007C4EFB /* Vehicle+Extensions.swift */; };
+		4ACCD135255C5EBB007C4EFB /* StarWarsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */; };
+		4ACCD13E255C5F2A007C4EFB /* ApolloServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */; };
+		4ACCD148255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */; };
+		4ACCD14D255C6C33007C4EFB /* StarWarsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */; };
 		4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACD47EA255B80D0008984FA /* CombineExt */; };
 		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
 		4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */; };
@@ -59,7 +62,6 @@
 		4AA0B1ED255A5500008C2AC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AA0B1EF255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA0B1F4255A5501008C2AC2 /* RavnChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavnChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AA0B1F8255A5501008C2AC2 /* RavnChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavnChallengeTests.swift; sourceTree = "<group>"; };
 		4AA0B1FA255A5501008C2AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AA0B1FF255A5501008C2AC2 /* RavnChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavnChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA0B203255A5501008C2AC2 /* RavnChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavnChallengeUITests.swift; sourceTree = "<group>"; };
@@ -74,6 +76,10 @@
 		4AA0B285255A952A008C2AC2 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
 		4ACCD129255C56EC007C4EFB /* Vehicle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Extensions.swift"; sourceTree = "<group>"; };
+		4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceTests.swift; sourceTree = "<group>"; };
+		4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServiceMock.swift; sourceTree = "<group>"; };
+		4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleProviderTests.swift; sourceTree = "<group>"; };
+		4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsServiceMock.swift; sourceTree = "<group>"; };
 		4ACD47F1255B822F008984FA /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 		4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleProvider.swift; sourceTree = "<group>"; };
 		4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleResponse.swift; sourceTree = "<group>"; };
@@ -161,7 +167,9 @@
 		4AA0B1F7255A5501008C2AC2 /* RavnChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4AA0B1F8255A5501008C2AC2 /* RavnChallengeTests.swift */,
+				4ACCD13C255C5F18007C4EFB /* Mocks */,
+				4ACCD134255C5EBB007C4EFB /* StarWarsServiceTests.swift */,
+				4ACCD147255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift */,
 				4AA0B1FA255A5501008C2AC2 /* Info.plist */,
 			);
 			path = RavnChallengeTests;
@@ -240,6 +248,15 @@
 				4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4ACCD13C255C5F18007C4EFB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCD13D255C5F2A007C4EFB /* ApolloServiceMock.swift */,
+				4ACCD14C255C6C33007C4EFB /* StarWarsServiceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		4ACD47F0255B821F008984FA /* Service */ = {
@@ -493,7 +510,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AA0B1F9255A5501008C2AC2 /* RavnChallengeTests.swift in Sources */,
+				4ACCD135255C5EBB007C4EFB /* StarWarsServiceTests.swift in Sources */,
+				4ACCD13E255C5F2A007C4EFB /* ApolloServiceMock.swift in Sources */,
+				4ACCD14D255C6C33007C4EFB /* StarWarsServiceMock.swift in Sources */,
+				4ACCD148255C6AFE007C4EFB /* StarWarsPeopleProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

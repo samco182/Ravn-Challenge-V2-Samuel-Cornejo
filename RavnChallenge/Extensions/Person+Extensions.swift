@@ -19,7 +19,6 @@ extension Person {
         }
     }
 
-
     /// A list of the available vehicles for this person
     var vehicles: [Vehicle] {
         vehicleConnection?.vehicles?.compactMap { $0 } ?? []

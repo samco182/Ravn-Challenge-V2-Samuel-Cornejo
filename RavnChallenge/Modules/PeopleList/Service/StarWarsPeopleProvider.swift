@@ -12,6 +12,8 @@ import Foundation
 final class StarWarsPeopleProvider: ObservableObject {
     // MARK: Variables Declaration
     private let service: StarWarsServiceType
+    private(set) var currentPage: PageInformation
+    private let resultsPerPage: Int
     private var cancellables = Set<AnyCancellable>()
 
     // Input
@@ -19,15 +21,19 @@ final class StarWarsPeopleProvider: ObservableObject {
     private let fetchMorePeopleRequest = PassthroughRelay<Void>()
 
     // Output
-    private var currentPage = PageInformation(hasNextPage: true)
-
-    @Published var people: [Person] = []
+    @Published var people: [Person]
     @Published var requestDidFail: Bool = false
     @Published var isLoading: Bool = false
 
     // MARK: Initializer
-    init(service: StarWarsServiceType = StarWarsService()) {
+    init(service: StarWarsServiceType = StarWarsService(),
+         currentPage: PageInformation = .init(hasNextPage: true),
+         resultsPerPage: Int = 5,
+         people: [Person] = []) {
         self.service = service
+        self.currentPage = currentPage
+        self.resultsPerPage = resultsPerPage
+        self.people = people
 
         setupBindings()
     }
@@ -51,7 +57,8 @@ final class StarWarsPeopleProvider: ObservableObject {
         // Output
         let peopleResult = fetchRequest
             .flatMapLatest(on: self) { weakSelf, currentPage in
-                weakSelf.service.fetchPeople(resultsPerPage: 5, endCursor: currentPage.endCursor).materialize()
+                weakSelf.service.fetchPeople(resultsPerPage: weakSelf.resultsPerPage, endCursor: currentPage.endCursor)
+                    .materialize()
             }
             .share()
 
