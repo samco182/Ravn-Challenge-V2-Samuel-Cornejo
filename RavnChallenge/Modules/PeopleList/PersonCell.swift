@@ -9,17 +9,16 @@ import SwiftUI
 
 struct PersonCell: View {
     // MARK: Variables Declaration
-    let name: String?
-    let shortDescription: String
+    let person: Person
 
     var body: some View {
         VStack(spacing: 16) {
             HStack {
                 VStack(alignment: .leading) {
-                    Text(name ?? "")
+                    Text(person.name ?? "")
                         .textStyle(.headerDefault)
 
-                    Text(shortDescription)
+                    Text(person.shortDescription)
                         .textStyle(.paragraphLowEmphasis)
                 }
 
@@ -39,6 +38,15 @@ struct PersonCell: View {
 
 struct PersonCell_Previews: PreviewProvider {
     static var previews: some View {
-        PersonCell(name: "Luke Skywalker", shortDescription: "Human from Tatooine")
+        let person = Person(id: "1",
+                            name: "Luke Skywalker",
+                            eyeColor: "Blue",
+                            hairColor: "Blond",
+                            skinColor: "Fair",
+                            birthYear: "19BBY",
+                            vehicleConnection: .init(vehicles:[.init(id: "1", name: "Snowspeeder"),
+                                                               .init(id: "3", name: "Imperial Speeder Bike")]))
+
+        PersonCell(person: person)
     }
 }
