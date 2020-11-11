@@ -15,13 +15,16 @@ struct PeopleListView: View {
         NavigationView {
             ScrollView {
                 LazyVStack(spacing: 0) {
-                    ForEach(provider.people, id: \.id) { person in
+                    ForEach(provider.people) { person in
                         PersonCell(name: person.name, shortDescription: person.shortDescription)
+                            .onAppear {
+                                provider.fetchMorePeople(after: person)
+                            }
                     }
-
-                    LoadingCell(isActive: $provider.isLoading)
-                    NoticeCell(isActive: $provider.requestDidFail)
                 }
+
+                LoadingCell(isActive: $provider.isLoading)
+                NoticeCell(isActive: $provider.requestDidFail)
             }
             .navigationBarTitle("People", displayMode: .inline)
             .navigationBarStyle(.ravnStyle)
