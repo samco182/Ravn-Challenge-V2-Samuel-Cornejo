@@ -1,4 +1,4 @@
-query PeopleList($first: Int, $after: String) {
+query StarWarsPeople($first: Int, $after: String) {
   allPeople(first: $first, after: $after) {
     pageInfo {
       hasNextPage

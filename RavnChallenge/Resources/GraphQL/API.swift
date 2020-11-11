@@ -4,11 +4,11 @@
 import Apollo
 import Foundation
 
-public final class PeopleListQuery: GraphQLQuery {
+public final class StarWarsPeopleQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    query PeopleList($first: Int, $after: String) {
+    query StarWarsPeople($first: Int, $after: String) {
       allPeople(first: $first, after: $after) {
         __typename
         pageInfo {
@@ -47,7 +47,7 @@ public final class PeopleListQuery: GraphQLQuery {
     }
     """
 
-  public let operationName: String = "PeopleList"
+  public let operationName: String = "StarWarsPeople"
 
   public var first: Int?
   public var after: String?

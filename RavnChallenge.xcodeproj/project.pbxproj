@@ -58,7 +58,7 @@
 		4AA0B21C255A5CA5008C2AC2 /* TextSyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSyle.swift; sourceTree = "<group>"; };
 		4AA0B222255A5F67008C2AC2 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4AA0B251255A732B008C2AC2 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		4AA0B25F255A7FC4008C2AC2 /* PeopleList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = PeopleList.graphql; sourceTree = "<group>"; };
+		4AA0B25F255A7FC4008C2AC2 /* StarWarsPeople.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = StarWarsPeople.graphql; sourceTree = "<group>"; };
 		4AA0B263255A80BB008C2AC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
 		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
@@ -172,10 +172,25 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		4AA0B242255A6766008C2AC2 /* Modules */ = {
+		4AA0B25D255A7F75008C2AC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AA0B243255A6AC5008C2AC2 /* PeopleList */,
+				4AA0B25E255A7F8C008C2AC2 /* GraphQL */,
+				4AA0B1EF255A5501008C2AC2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4AA0B25E255A7F8C008C2AC2 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B25F255A7FC4008C2AC2 /* StarWarsPeople.graphql */,
+				4AA0B251255A732B008C2AC2 /* schema.json */,
+				4AA0B263255A80BB008C2AC2 /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 		4AA0B283255A94D3008C2AC2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
