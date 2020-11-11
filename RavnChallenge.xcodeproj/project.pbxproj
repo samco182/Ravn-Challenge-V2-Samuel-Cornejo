@@ -30,6 +30,7 @@
 		4ACD484C255BB6AD008984FA /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD484B255BB6AD008984FA /* NoticeCell.swift */; };
 		4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */; };
 		4ACD4861255BDFDB008984FA /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4860255BDFDB008984FA /* SectionHeader.swift */; };
+		4ACD4871255BE36A008984FA /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4870255BE36A008984FA /* DataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		4ACD484B255BB6AD008984FA /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
 		4ACD4860255BDFDB008984FA /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		4ACD4870255BE36A008984FA /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4ACD485A255BDBC5008984FA /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4870255BE36A008984FA /* DataCell.swift */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,6 +466,7 @@
 				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
 				4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */,
 				4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */,
+				4ACD4871255BE36A008984FA /* DataCell.swift in Sources */,
 				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */,
