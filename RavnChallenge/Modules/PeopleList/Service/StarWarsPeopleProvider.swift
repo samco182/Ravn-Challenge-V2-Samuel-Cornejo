@@ -76,8 +76,7 @@ final class StarWarsPeopleProvider: ObservableObject {
             .assign(to: \.requestDidFail, on: self, ownership: .weak)
             .store(in: &cancellables)
 
-        Publishers.Merge(fetchRequest.map { _ in true },
-                         peopleResult.map { _ in false })
+        Publishers.Merge(fetchRequest.map { _ in true }, peopleResult.map { _ in false })
             .assign(to: \.isLoading, on: self, ownership: .weak)
             .store(in: &cancellables)
     }

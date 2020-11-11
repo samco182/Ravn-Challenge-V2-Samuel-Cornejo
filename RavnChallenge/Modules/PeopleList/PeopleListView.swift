@@ -23,10 +23,10 @@ struct PeopleListView: View {
                                 }
                         }
                     }
-                }
 
-                LoadingCell(isActive: $provider.isLoading)
-                NoticeCell(isActive: $provider.requestDidFail)
+                    LoadingCell(isActive: $provider.isLoading)
+                    NoticeCell(isActive: $provider.requestDidFail)
+                }
             }
             .navigationBarTitle("People", displayMode: .inline)
             .navigationBarStyle(.ravnStyle)
