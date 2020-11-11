@@ -22,11 +22,13 @@
 		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
 		4ACD47EB255B80D0008984FA /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACD47EA255B80D0008984FA /* CombineExt */; };
 		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
+		4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */; };
 		4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */; };
 		4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4827255B9E66008984FA /* LoadingCell.swift */; };
 		4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4840255BAD58008984FA /* PersonCell.swift */; };
 		4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4846255BB20D008984FA /* Person+Extensions.swift */; };
 		4ACD484C255BB6AD008984FA /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD484B255BB6AD008984FA /* NoticeCell.swift */; };
+		4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +70,13 @@
 		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
 		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
 		4ACD47F1255B822F008984FA /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
+		4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleProvider.swift; sourceTree = "<group>"; };
 		4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleResponse.swift; sourceTree = "<group>"; };
 		4ACD4827255B9E66008984FA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		4ACD4840255BAD58008984FA /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		4ACD4846255BB20D008984FA /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 		4ACD484B255BB6AD008984FA /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
+		4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				4ACD47F1255B822F008984FA /* StarWarsService.swift */,
+				4ACD480D255B8E92008984FA /* StarWarsPeopleProvider.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				4ACD4846255BB20D008984FA /* Person+Extensions.swift */,
+				4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,10 +451,12 @@
 				4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */,
 				4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */,
 				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
+				4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */,
 				4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */,
 				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */,
+				4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
 				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
 				4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */,
