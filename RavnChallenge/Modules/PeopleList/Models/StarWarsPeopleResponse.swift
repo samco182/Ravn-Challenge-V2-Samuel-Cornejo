@@ -7,17 +7,14 @@
 
 import Foundation
 
-typealias StarWarsPeople = StarWarsPeopleQuery.Data.AllPerson.Person
-typealias StarWarsPage = StarWarsPeopleQuery.Data.AllPerson.PageInfo
-
 struct StarWarsPeopleResponse {
     // MARK: Variables Declaration
-    let people: [StarWarsPeople]
-    let page: StarWarsPage
+    let people: [Person]
+    let page: PageInformation
 
     // MARK: Initializer
     init(data: StarWarsPeopleQuery.Data) {
         self.people = data.allPeople?.people?.compactMap { $0 } ?? []
-        self.page = data.allPeople?.pageInfo ?? StarWarsPage(hasNextPage: false)
+        self.page = data.allPeople?.pageInfo ?? PageInformation(hasNextPage: false)
     }
 }

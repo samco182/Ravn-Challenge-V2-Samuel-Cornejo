@@ -24,6 +24,8 @@
 		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
 		4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */; };
 		4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4827255B9E66008984FA /* LoadingCell.swift */; };
+		4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4840255BAD58008984FA /* PersonCell.swift */; };
+		4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4846255BB20D008984FA /* Person+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		4ACD47F1255B822F008984FA /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 		4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleResponse.swift; sourceTree = "<group>"; };
 		4ACD4827255B9E66008984FA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		4ACD4840255BAD58008984FA /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		4ACD4846255BB20D008984FA /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA0B215255A5858008C2AC2 /* Assets */,
+				4ACD4845255BB1EC008984FA /* Extensions */,
 				4AA0B283255A94D3008C2AC2 /* Modules */,
 				4AA0B28D255B5A13008C2AC2 /* Network */,
 				4AA0B25D255A7F75008C2AC2 /* Resources */,
@@ -209,6 +214,7 @@
 			children = (
 				4ACD4812255B991D008984FA /* Models */,
 				4ACD47F0255B821F008984FA /* Service */,
+				4ACD4840255BAD58008984FA /* PersonCell.swift */,
 			);
 			path = PeopleList;
 			sourceTree = "<group>";
@@ -243,6 +249,14 @@
 				4ACD4827255B9E66008984FA /* LoadingCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4ACD4845255BB1EC008984FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4846255BB20D008984FA /* Person+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,10 +440,12 @@
 			files = (
 				4AA0B1E9255A54FF008C2AC2 /* ContentView.swift in Sources */,
 				4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */,
+				4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */,
 				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
 				4ACD4828255B9E66008984FA /* LoadingCell.swift in Sources */,
 				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
+				4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
 				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
 				4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */,
