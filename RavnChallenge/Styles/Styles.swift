@@ -9,14 +9,14 @@ import SwiftUI
 
 extension Color {
     static let ravnBlack = Color("ravnBlack")
-    static let textDark = Color("textDark")
-    static let textLight = Color("textLight")
-    static let textEmphasis = Color("textEmphasis")
+    static let darkText = Color("darkText")
+    static let lightText = Color("lightText")
+    static let emphasisText = Color("emphasisText")
 }
 
 extension UIColor {
     static let ravnBlack = UIColor(named: "ravnBlack")
-    static let textDark = UIColor(named: "textDark")
-    static let textLight = UIColor(named: "textLight")
-    static let textEmphasis = UIColor(named: "textEmphasis")
+    static let darkText = UIColor(named: "darkText")
+    static let lightText = UIColor(named: "lightText")
+    static let emphasisText = UIColor(named: "emphasisText")
 }
