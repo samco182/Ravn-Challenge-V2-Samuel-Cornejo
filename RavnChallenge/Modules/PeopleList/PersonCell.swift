@@ -13,7 +13,7 @@ struct PersonCell: View {
     let shortDescription: String
 
     var body: some View {
-        LazyVStack(spacing: 16) {
+        VStack(spacing: 16) {
             HStack {
                 VStack(alignment: .leading) {
                     Text(name ?? "")
@@ -28,6 +28,7 @@ struct PersonCell: View {
                 Image(systemName: "chevron.right")
                     .imageScale(.small)
                     .padding(.trailing, 24)
+                    .foregroundColor(Color(UIColor.label))
             }
 
             Divider()

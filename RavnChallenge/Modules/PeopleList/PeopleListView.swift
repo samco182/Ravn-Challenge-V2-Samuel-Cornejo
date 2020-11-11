@@ -16,10 +16,12 @@ struct PeopleListView: View {
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(provider.people) { person in
-                        PersonCell(name: person.name, shortDescription: person.shortDescription)
-                            .onAppear {
-                                provider.fetchMorePeople(after: person)
-                            }
+                        NavigationLink(destination: PersonDetailView(person: person)) {
+                            PersonCell(name: person.name, shortDescription: person.shortDescription)
+                                .onAppear {
+                                    provider.fetchMorePeople(after: person)
+                                }
+                        }
                     }
                 }
 
