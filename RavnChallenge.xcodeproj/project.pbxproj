@@ -29,6 +29,7 @@
 		4ACD4847255BB20D008984FA /* Person+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4846255BB20D008984FA /* Person+Extensions.swift */; };
 		4ACD484C255BB6AD008984FA /* NoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD484B255BB6AD008984FA /* NoticeCell.swift */; };
 		4ACD4851255BB84C008984FA /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */; };
+		4ACD4861255BDFDB008984FA /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4860255BDFDB008984FA /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		4ACD4846255BB20D008984FA /* Person+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Extensions.swift"; sourceTree = "<group>"; };
 		4ACD484B255BB6AD008984FA /* NoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCell.swift; sourceTree = "<group>"; };
 		4ACD4850255BB84C008984FA /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		4ACD4860255BDFDB008984FA /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			children = (
 				4ACD4827255B9E66008984FA /* LoadingCell.swift */,
 				4ACD484B255BB6AD008984FA /* NoticeCell.swift */,
+				4ACD4860255BDFDB008984FA /* SectionHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				4ACD4841255BAD58008984FA /* PersonCell.swift in Sources */,
 				4ACD480E255B8E92008984FA /* StarWarsPeopleProvider.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
+				4ACD4861255BDFDB008984FA /* SectionHeader.swift in Sources */,
 				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
 				4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */,
 				4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */,
