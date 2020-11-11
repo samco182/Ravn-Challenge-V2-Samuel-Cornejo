@@ -20,6 +20,8 @@
 		4AA0B264255A80BB008C2AC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B263255A80BB008C2AC2 /* API.swift */; };
 		4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */; };
 		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
+		4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD47F1255B822F008984FA /* StarWarsService.swift */; };
+		4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		4AA0B263255A80BB008C2AC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
 		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
+		4ACD47F1255B822F008984FA /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
+		4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPeopleResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +115,11 @@
 		4AA0B1E5255A54FF008C2AC2 /* RavnChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				4AA0B215255A5858008C2AC2 /* Assets */,
+				4AA0B283255A94D3008C2AC2 /* Modules */,
 				4AA0B28D255B5A13008C2AC2 /* Network */,
 				4AA0B25D255A7F75008C2AC2 /* Resources */,
-				4AA0B242255A6766008C2AC2 /* Modules */,
 				4AA0B21B255A5C6B008C2AC2 /* Styles */,
-				4AA0B215255A5858008C2AC2 /* Assets */,
 				4AA0B1E6255A54FF008C2AC2 /* RavnChallengeApp.swift */,
 				4AA0B1E8255A54FF008C2AC2 /* ContentView.swift */,
 				4AA0B1EC255A5500008C2AC2 /* Preview Content */,
@@ -172,13 +176,19 @@
 			isa = PBXGroup;
 			children = (
 				4AA0B243255A6AC5008C2AC2 /* PeopleList */,
+		4AA0B283255A94D3008C2AC2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0B284255A94DD008C2AC2 /* PeopleList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		4AA0B243255A6AC5008C2AC2 /* PeopleList */ = {
+		4AA0B284255A94DD008C2AC2 /* PeopleList */ = {
 			isa = PBXGroup;
 			children = (
+				4ACD4812255B991D008984FA /* Models */,
+				4ACD47F0255B821F008984FA /* Service */,
 			);
 			path = PeopleList;
 			sourceTree = "<group>";
@@ -191,14 +201,20 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		4AA0B25E255A7F8C008C2AC2 /* GraphQL */ = {
+		4ACD47F0255B821F008984FA /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4AA0B25F255A7FC4008C2AC2 /* PeopleList.graphql */,
-				4AA0B251255A732B008C2AC2 /* schema.json */,
-				4AA0B263255A80BB008C2AC2 /* API.swift */,
+				4ACD47F1255B822F008984FA /* StarWarsService.swift */,
 			);
-			path = GraphQL;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4ACD4812255B991D008984FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ACD4821255B9ABD008984FA /* StarWarsPeopleResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,11 +395,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA0B1E9255A54FF008C2AC2 /* ContentView.swift in Sources */,
+				4ACD47F2255B822F008984FA /* StarWarsService.swift in Sources */,
 				4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */,
 				4AA0B21D255A5CA5008C2AC2 /* TextSyle.swift in Sources */,
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
 				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
+				4ACD4822255B9ABD008984FA /* StarWarsPeopleResponse.swift in Sources */,
 				4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
