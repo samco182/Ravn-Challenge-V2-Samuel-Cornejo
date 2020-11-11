@@ -19,6 +19,7 @@
 		4AA0B246255A6C35008C2AC2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 4AA0B245255A6C35008C2AC2 /* Apollo */; };
 		4AA0B264255A80BB008C2AC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B263255A80BB008C2AC2 /* API.swift */; };
 		4AA0B272255A85FF008C2AC2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */; };
+		4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4AA0B25F255A7FC4008C2AC2 /* PeopleList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = PeopleList.graphql; sourceTree = "<group>"; };
 		4AA0B263255A80BB008C2AC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4AA0B271255A85FF008C2AC2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
+		4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		4AA0B1E5255A54FF008C2AC2 /* RavnChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				4AA0B28D255B5A13008C2AC2 /* Network */,
 				4AA0B25D255A7F75008C2AC2 /* Resources */,
 				4AA0B242255A6766008C2AC2 /* Modules */,
 				4AA0B21B255A5C6B008C2AC2 /* Styles */,
@@ -180,13 +183,12 @@
 			path = PeopleList;
 			sourceTree = "<group>";
 		};
-		4AA0B25D255A7F75008C2AC2 /* Resources */ = {
+		4AA0B28D255B5A13008C2AC2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				4AA0B25E255A7F8C008C2AC2 /* GraphQL */,
-				4AA0B1EF255A5501008C2AC2 /* Info.plist */,
+				4AA0B28E255B5A31008C2AC2 /* ApolloService.swift */,
 			);
-			path = Resources;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4AA0B25E255A7F8C008C2AC2 /* GraphQL */ = {
@@ -382,6 +384,7 @@
 				4AA0B1E7255A54FF008C2AC2 /* RavnChallengeApp.swift in Sources */,
 				4AA0B223255A5F67008C2AC2 /* Styles.swift in Sources */,
 				4AA0B264255A80BB008C2AC2 /* API.swift in Sources */,
+				4AA0B28F255B5A31008C2AC2 /* ApolloService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
