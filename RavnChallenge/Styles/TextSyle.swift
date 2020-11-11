@@ -25,11 +25,11 @@ struct TextStyle: ViewModifier {
 }
 
 extension TextStyle {
-    static let h2Default = TextStyle(font: .system(size: 17, weight: .bold), color: .textDark)
-    static let h2LowEmpashis = TextStyle(font: .system(size: 17, weight: .bold), color: .textLight)
-    static let h2HighEmphasis = TextStyle(font: .system(size: 17, weight: .bold), color: .textEmphasis)
-    static let p1Default = TextStyle(font: .system(size: 14), color: .textDark)
-    static let p1LowEmphasis = TextStyle(font: .system(size: 14), color: .textLight)
+    static let headerDefault = TextStyle(font: .system(size: 17, weight: .bold), color: .darkText)
+    static let headerLowEmphasis = TextStyle(font: .system(size: 17, weight: .bold), color: .lightText)
+    static let headerHighEmphasis = TextStyle(font: .system(size: 17, weight: .bold), color: .emphasisText)
+    static let paragraphDefault = TextStyle(font: .system(size: 14), color: .darkText)
+    static let paragraphLowEmphasis = TextStyle(font: .system(size: 14), color: .lightText)
 }
 
 extension View {

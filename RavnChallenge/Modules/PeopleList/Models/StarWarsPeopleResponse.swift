@@ -7,6 +7,10 @@
 
 import Foundation
 
+typealias Person = StarWarsPeopleQuery.Data.AllPerson.Person
+typealias Vehicle = StarWarsPeopleQuery.Data.AllPerson.Person.VehicleConnection.Vehicle
+typealias PageInformation = StarWarsPeopleQuery.Data.AllPerson.PageInfo
+
 struct StarWarsPeopleResponse {
     // MARK: Variables Declaration
     let people: [Person]

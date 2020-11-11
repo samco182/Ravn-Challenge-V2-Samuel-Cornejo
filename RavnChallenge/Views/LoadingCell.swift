@@ -17,7 +17,7 @@ struct LoadingCell: View {
                 ProgressView()
 
                 Text("Loading")
-                    .textStyle(.h2LowEmpashis)
+                    .textStyle(.headerLowEmphasis)
             }
             .padding(.top, 16)
         }

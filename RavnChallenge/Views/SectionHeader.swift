@@ -13,7 +13,7 @@ struct SectionHeader: View {
 
     var body: some View {
         Text(title)
-            .textStyle(.h2Default)
+            .textStyle(.headerDefault)
             .padding(.horizontal, 16)
             .padding(.top, 32)
             .padding(.bottom, 8)

@@ -17,16 +17,16 @@ struct PeopleListView: View {
                 LazyVStack(spacing: 0) {
                     ForEach(provider.people) { person in
                         NavigationLink(destination: PersonDetailView(person: person)) {
-                            PersonCell(name: person.name, shortDescription: person.shortDescription)
+                            PersonCell(person: person)
                                 .onAppear {
                                     provider.fetchMorePeople(after: person)
                                 }
                         }
                     }
-                }
 
-                LoadingCell(isActive: $provider.isLoading)
-                NoticeCell(isActive: $provider.requestDidFail)
+                    LoadingCell(isActive: $provider.isLoading)
+                    NoticeCell(isActive: $provider.requestDidFail)
+                }
             }
             .navigationBarTitle("People", displayMode: .inline)
             .navigationBarStyle(.ravnStyle)

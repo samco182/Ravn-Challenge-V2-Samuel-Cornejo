@@ -14,7 +14,7 @@ struct NoticeCell: View {
     var body: some View {
         if isActive {
             Text("Failed to Load Data")
-                .textStyle(.h2HighEmphasis)
+                .textStyle(.headerHighEmphasis)
                 .padding(16)
         }
     }

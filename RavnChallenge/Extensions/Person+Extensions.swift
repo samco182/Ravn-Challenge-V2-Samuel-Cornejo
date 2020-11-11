@@ -7,11 +7,8 @@
 
 import Foundation
 
-typealias Person = StarWarsPeopleQuery.Data.AllPerson.Person
-typealias Vehicle = StarWarsPeopleQuery.Data.AllPerson.Person.VehicleConnection.Vehicle
-typealias PageInformation = StarWarsPeopleQuery.Data.AllPerson.PageInfo
-
 extension Person {
+    /// Short description of this person species and homeworld
     var shortDescription: String {
         guard let home = homeworld?.name else { return "" }
 
@@ -22,6 +19,8 @@ extension Person {
         }
     }
 
+
+    /// A list of the available vehicles for this person
     var vehicles: [Vehicle] {
         vehicleConnection?.vehicles?.compactMap { $0 } ?? []
     }
