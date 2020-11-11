@@ -16,12 +16,12 @@ struct DataCell: View {
         VStack(spacing: 16) {
             HStack {
                 Text(title)
-                    .textStyle(.h2LowEmpashis)
+                    .textStyle(.headerLowEmphasis)
 
                 Spacer(minLength: 16)
 
                 Text(value)
-                    .textStyle(.h2Default)
+                    .textStyle(.headerDefault)
                     .padding(.trailing, 16)
             }
 

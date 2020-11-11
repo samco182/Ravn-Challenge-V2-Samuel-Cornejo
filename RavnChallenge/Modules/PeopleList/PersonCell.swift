@@ -17,10 +17,10 @@ struct PersonCell: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(name ?? "")
-                        .textStyle(.h2Default)
+                        .textStyle(.headerDefault)
 
                     Text(shortDescription)
-                        .textStyle(.p1LowEmphasis)
+                        .textStyle(.paragraphLowEmphasis)
                 }
 
                 Spacer(minLength: 16)
